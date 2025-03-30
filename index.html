@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FALCON KONVEKSI</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <img src="img/logo.png" alt="Logo Falcon Konveksi" width="40" class="me-2"> FALCON KONVEKSI
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container text-center text-light">
+      <h1 class="display-3 fw-bold">Solusi Konveksi Berkualitas</h1>
+      <p class="lead">Tampil beda dengan desain eksklusif dan material premium</p>
+      <a href="#produk" class="btn btn-lg btn-primary mt-3">Lihat Produk Kami</a>
+    </div>
+  </section>
+
+  <!-- Produk Section -->
+  <section id="produk" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Produk Kami</h2>
+      <div class="row g-4">
+        <!-- Kartu Produk 1 -->
+        <div class="col-md-3">
+          <div class="card shadow-sm product-card">
+            <img src="img/produk1-1.jpg" class="card-img-top" alt="Produk 1">
+            <div class="card-body">
+              <h5 class="card-title">Kaos Premium</h5>
+              <p class="card-text">Bahan katun terbaik untuk kenyamanan maksimal.</p>
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#produkModal1">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+        <!-- Kartu Produk 2 -->
+        <div class="col-md-3">
+          <div class="card shadow-sm product-card">
+            <img src="img/produk2-1.jpg" class="card-img-top" alt="Produk 2">
+            <div class="card-body">
+              <h5 class="card-title">Jaket Custom</h5>
+              <p class="card-text">Desain sesuai keinginan dengan bahan berkualitas.</p>
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#produkModal2">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+        <!-- Kartu Produk 3 -->
+        <div class="col-md-3">
+          <div class="card shadow-sm product-card">
+            <img src="img/produk3-1.jpg" class="card-img-top" alt="Produk 3">
+            <div class="card-body">
+              <h5 class="card-title">Kemeja Eksklusif</h5>
+              <p class="card-text">Tampilan profesional dengan jahitan rapi.</p>
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#produkModal3">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+        <!-- Kartu Produk 4 -->
+        <div class="col-md-3">
+          <div class="card shadow-sm product-card">
+            <img src="img/produk4-1.jpg" class="card-img-top" alt="Produk 4">
+            <div class="card-body">
+              <h5 class="card-title">Sweater Stylish</h5>
+              <p class="card-text">Sweater dengan desain modern dan bahan yang nyaman.</p>
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#produkModal4">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Produk 1 -->
+  <div class="modal fade" id="produkModal1" tabindex="-1" aria-labelledby="produkModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="produkModalLabel1">Kaos Premium</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Carousel Produk 1 -->
+          <div id="carouselProduk1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/produk1-1.jpg" class="d-block w-100" alt="Foto 1 Kaos Premium">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk1-2.jpg" class="d-block w-100" alt="Foto 2 Kaos Premium">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk1-3.jpg" class="d-block w-100" alt="Foto 3 Kaos Premium">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk1-4.jpg" class="d-block w-100" alt="Foto 4 Kaos Premium">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk1-5.jpg" class="d-block w-100" alt="Foto 5 Kaos Premium">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduk1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Sebelumnya</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProduk1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Berikutnya</span>
+            </button>
+          </div>
+          <p class="mt-3">Kaos Premium kami dibuat dengan bahan katun berkualitas tinggi yang memberikan kenyamanan dan daya tahan ekstra. Desain minimalis namun modern cocok untuk berbagai kesempatan.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Produk 2 -->
+  <div class="modal fade" id="produkModal2" tabindex="-1" aria-labelledby="produkModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="produkModalLabel2">Jaket Custom</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Carousel Produk 2 -->
+          <div id="carouselProduk2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/produk2-1.jpg" class="d-block w-100" alt="Foto 1 Jaket Custom">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk2-2.jpg" class="d-block w-100" alt="Foto 2 Jaket Custom">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk2-3.jpg" class="d-block w-100" alt="Foto 3 Jaket Custom">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk2-4.jpg" class="d-block w-100" alt="Foto 4 Jaket Custom">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk2-5.jpg" class="d-block w-100" alt="Foto 5 Jaket Custom">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduk2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Sebelumnya</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProduk2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Berikutnya</span>
+            </button>
+          </div>
+          <p class="mt-3">Jaket custom kami dirancang dengan sentuhan modern dan detail yang eksklusif. Setiap jaket disesuaikan dengan kebutuhan dan gaya Anda, memastikan tampilan yang unik.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Produk 3 -->
+  <div class="modal fade" id="produkModal3" tabindex="-1" aria-labelledby="produkModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="produkModalLabel3">Kemeja Eksklusif</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Carousel Produk 3 -->
+          <div id="carouselProduk3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/produk3-1.jpg" class="d-block w-100" alt="Foto 1 Kemeja Eksklusif">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk3-2.jpg" class="d-block w-100" alt="Foto 2 Kemeja Eksklusif">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk3-3.jpg" class="d-block w-100" alt="Foto 3 Kemeja Eksklusif">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk3-4.jpg" class="d-block w-100" alt="Foto 4 Kemeja Eksklusif">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk3-5.jpg" class="d-block w-100" alt="Foto 5 Kemeja Eksklusif">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduk3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Sebelumnya</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProduk3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Berikutnya</span>
+            </button>
+          </div>
+          <p class="mt-3">Kemeja eksklusif ini memberikan tampilan profesional dengan desain yang rapi dan bahan berkualitas. Cocok untuk keperluan formal maupun santai.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Produk 4 -->
+  <div class="modal fade" id="produkModal4" tabindex="-1" aria-labelledby="produkModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="produkModalLabel4">Sweater Stylish</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Carousel Produk 4 -->
+          <div id="carouselProduk4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/produk4-1.jpg" class="d-block w-100" alt="Foto 1 Sweater Stylish">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk4-2.jpg" class="d-block w-100" alt="Foto 2 Sweater Stylish">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk4-3.jpg" class="d-block w-100" alt="Foto 3 Sweater Stylish">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk4-4.jpg" class="d-block w-100" alt="Foto 4 Sweater Stylish">
+              </div>
+              <div class="carousel-item">
+                <img src="img/produk4-5.jpg" class="d-block w-100" alt="Foto 5 Sweater Stylish">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProduk4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Sebelumnya</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProduk4" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Berikutnya</span>
+            </button>
+          </div>
+          <p class="mt-3">Sweater Stylish ini menawarkan kenyamanan dan desain modern yang cocok untuk berbagai kesempatan, baik santai maupun formal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-primary">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tentang Kami Section -->
+  <section id="tentang" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Tentang Kami</h2>
+      <p class="text-center">Kami adalah perusahaan konveksi berpengalaman yang menyediakan produk berkualitas dengan harga kompetitif. Kepuasan pelanggan adalah prioritas utama kami, dan kami terus berinovasi dalam setiap desain.</p>
+    </div>
+  </section>
+
+  <!-- Testimoni Section (Slider Horizontal) -->
+  <section id="testimoni" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Testimoni Pelanggan</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-box">
+          <p>"Produk yang luar biasa, kualitasnya sesuai dengan yang dijanjikan!"</p>
+          <footer>Andi, Jakarta</footer>
+        </div>
+        <div class="testimonial-box">
+          <p>"Desain eksklusif dan layanan yang cepat membuat saya kembali lagi."</p>
+          <footer>Siti, Bandung</footer>
+        </div>
+        <div class="testimonial-box">
+          <p>"Sangat merekomendasikan untuk Anda yang mencari kualitas dan desain terbaik."</p>
+          <footer>Budi, Surabaya</footer>
+        </div>
+        <!-- Duplikasi untuk looping slider -->
+        <div class="testimonial-box">
+          <p>"Produk yang luar biasa, kualitasnya sesuai dengan yang dijanjikan!"</p>
+          <footer>Andi, Jakarta</footer>
+        </div>
+        <div class="testimonial-box">
+          <p>"Desain eksklusif dan layanan yang cepat membuat saya kembali lagi."</p>
+          <footer>Siti, Bandung</footer>
+        </div>
+        <div class="testimonial-box">
+          <p>"Sangat merekomendasikan untuk Anda yang mencari kualitas dan desain terbaik."</p>
+          <footer>Budi, Surabaya</footer>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="kontak" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold">Kontak Kami</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" placeholder="Nama Anda">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email Anda">
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" rows="5" placeholder="Tulis pesan Anda"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-4">
+    <div class="container">
+      <p class="mb-0">© 2025 FALCON KONVEKSI. All rights reserved.</p>
+      <div class="mt-2">
+        <a href="#" class="text-light me-3" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="https://www.instagram.com/falconkonveksi_nganjuk?igsh=MTBreDM5NTc2cjA2OA%3D%3D&utm_source=qr" class="text-light me-3" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="https://wa.me/message/VIKBMLRH4YZRA1" class="text-light" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script>
+    // Validasi sederhana pada form kontak
+    document.querySelector("form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Pesan Anda telah terkirim. Terima kasih!");
+    });
+  </script>
+</body>
+</html>
